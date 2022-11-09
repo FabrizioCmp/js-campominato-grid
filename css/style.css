@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+}
+
+.game_title{
+    font-size: 4rem;
+    color: brown;
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+}
+
+.game_menu{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn_genrate{
+    background-color: rgb(73, 143, 234);
+    color: white;
+    border-radius: 50px;
+    padding: .3rem 1rem;
+    margin-left: 3rem;
+}
