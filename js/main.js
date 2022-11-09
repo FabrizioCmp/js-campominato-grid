@@ -1,11 +1,18 @@
+// dichiarazioni costanti/variabili globali
 const btnGenerate = document.querySelector(".btn_generate");
+const difficultyEl = document.getElementById("difficulty");
 
 
+// al click del bottone genera il campo richesto
 btnGenerate.addEventListener("click", function(){
-    generateCampo(100);
+    generateCampo(parseInt(difficultyEl.value));
 })
 
-
+// DICHIARAZIONE FUNZIONI *************************
+/**
+ * genera campo con numero di caselle totali specificato
+ * @param {number} numCelle -caselle totali
+ */
 function generateCampo(numCelle){
     const campoEl = document.querySelector(".campo");
     const cellePerRiga = Math.sqrt(numCelle);
@@ -20,7 +27,7 @@ function generateCampo(numCelle){
 
         newCell.style.width = `calc(100% / ${cellePerRiga})`;
         newCell.classList.add(`cella`);
-        newCell.innerHTML = i+1;
+        newCell.innerHTML = `<div>${i+1}</div>`;
 
         newCell.addEventListener("click", function(){
             this.classList.add(`bkg_click`);
