@@ -14,10 +14,25 @@ body{
     margin-top: 3rem;
 }
 
-.btn_genrate{
+.btn_generate{
     background-color: rgb(73, 143, 234);
     color: white;
     border-radius: 50px;
     padding: .3rem 1rem;
     margin-left: 3rem;
+}
+
+.campo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.cella{
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+}
+
+.bkg_click{
+    background-color: rgb(47, 216, 222);
 }
